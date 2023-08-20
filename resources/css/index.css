@@ -1,0 +1,312 @@
+body {
+    background-color: antiquewhite;
+}
+
+.headline {
+    text-align: center;
+    margin-bottom: 100px;
+}
+h1 {
+    font-family: 'vidaloka', serif;
+    font-size: 3.9em;
+    display: inline;
+    text-align: center;
+    /* border-bottom: 3px solid hsl(34, 32%, 58%); */
+    border-bottom: 2px solid gray;
+    /* border: 1px solid black; */
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+}
+h1 span {
+    color: hsl(10, 69%, 47%);
+}
+
+h2 {
+    font-family:'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    border-bottom: 2px solid hsl(34, 92%, 88%);
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+h2:hover {
+    background-color: hsl(36, 76%, 88%);
+    border-radius: 18px;
+    padding: 10px;
+}
+
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2;
+    display: inline;
+}
+
+/* todo COLORS   */
+.colors ul li div {
+   display: inline-block; 
+   margin-left: 20px;
+   vertical-align: middle;
+   border: 1px solid;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 3px darkslategray;
+}
+
+.brand-color {
+    background-color: #cc4125;
+    border: none;
+}
+.brand-color::after {
+content:"hsl(10, 69%, 47%)";
+position: absolute;
+margin-left: 55px;
+margin-top: 10px;
+}
+.nav-color-1::after {
+    content:"''AntiqueWhite''";
+    position: absolute;
+    margin-left: 55px;
+    margin-top: 10px;
+}
+.nav-color-1 {
+    background-color: antiquewhite;
+    border: none;
+    margin-right: 100px;
+}
+.nav-color-2 {
+    background-color: hsl(34, 89%, 82%);
+    margin-right: 120px;
+}
+.nav-color-2::after {
+    content:"hsl(34, 89%, 82%)";
+position: absolute;
+margin-left: 55px;
+margin-top: 10px;
+}
+.nav-color-3 {
+    margin-left: 140px;
+    background-color: hsl(34, 32%, 58%);
+    border: none;
+}
+.nav-color-3::after {
+    content:"hsl(34, 32%, 58%)";
+position: absolute;
+margin-left: 55px;
+margin-top: 10px;
+}
+/* component colors */
+.comp-color-1 {
+    background-color: hsl(240, 9%, 13%);
+    border: none;
+    margin-right: 125px;
+}
+.comp-color-1::after {
+    content:"hsl(240, 9%, 13%)";
+position: absolute;
+margin-left: 55px;
+margin-top: 10px;
+}
+.comp-color-2 {
+background-color: hsl(0, 0%, 29%);
+border: none;
+}
+.comp-color-2::after{
+    content:"hsl(0, 0%, 29%)";
+    position: absolute;
+    margin-left: 55px;
+    margin-top: 10px;
+}
+
+/* todo COLORS  */
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+
+/* todo TYPOGRAPHY */
+ul li span {
+    display: inline-block;
+}
+.typography h3 {
+    display: block;
+}
+.typography p {
+    display: inline;
+}
+.typography span {
+    margin-left: 20px;
+}
+.vidaloka {
+    font-family: 'vidaloka';
+    font-size: 2em;
+}
+.roboto {
+    font-family: 'roboto';
+    font-size: 2em;
+}
+.typography ul li div p{
+    display: block;
+}
+.text-styles >:first-child {
+    font-family: 'vidaloka';
+    font-size: 3em;
+}
+.text-styles ul {
+    margin-left: 40px;
+    line-height: 10px;
+}
+.text-styles ul li {
+    list-style:circle;
+}
+/* subheading */
+.text-styles > :nth-child(3) {
+    font-size: 1.5em;
+    font-family: 'roboto';
+    font-weight: 500;
+}
+/* todo COMPONENTS */
+.components ul li h3 {
+display: inline;
+}
+.components div {
+    display: inline;
+    margin: 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #cc4125ff;
+    padding: 20px 20px;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 4px lightslategray ;
+}
+div .secondary {
+    background-color: transparent;
+    border: solid 2px hsl(0, 0%, 29%);
+    color: hsl(0, 0%, 29%);
+    box-shadow: none;
+}
+div .tertiary {
+    background-color: transparent;
+    box-shadow: none;
+    color: blue;
+}
+div .tertiary:hover {
+text-decoration: underline solid 2px;
+}
+
+.components ul li p {
+    margin-top: 20px;
+}
+
+
+
+
+/* todo SIDEBAR */
+nav {
+    width: 130px;
+    height: 100%;
+    position: fixed;
+    /* background-color: hsl(240, 9%, 13%); */
+
+}
+
+nav div {
+    border: dotted 1px red;
+    height: 350px;
+    width: 130px;
+    display: flex;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    background-color: hsl(240, 9%, 13%);
+    color: hsl(0, 0%, 94%);
+    margin: 0 20px;
+    border: none;
+    border-radius: 30px;
+    padding: 30px 2px;
+    box-shadow: 0px 3px 5px 2px darkslategray;
+
+}
+
+nav div ul {
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items: center;
+}
+nav div ul li {
+    display:flex;
+    justify-content: center;
+
+}
+
+nav div ul li a {
+    padding: 20px 10px;
+    background-color:hsl(0, 0%, 17%);
+    border-radius: 30px;
+    box-shadow: 0px 0.5px 2px lavenderblush;
+    letter-spacing: .5px;
+    font-family: 'roboto', sans-serif;
+    font-weight: 500;
+
+}
+
+ nav div ul li a:hover {
+    background-color:hsl(0, 0%, 22%);
+    padding: 20px 10px;
+    border-radius: 30px;
+ }
+ nav div ul li a:active {
+    font-size: 15px;
+    color: hsl(0, 0%, 90%);
+ }
+
+
+
+
+/* todo SIDEBAR */
+
+.main-content {
+    margin: 20px 20px 20px 160px;
+}
+
+section {
+    margin: 20px 20px 100px 20px;
+    background-color: hsl(34, 89%, 82%);
+    border-radius: 18px;
+    padding: 30px 18px;
+    border: none;
+    box-shadow: 0px 1px 4px darkslategray;
+}
+
+section ul li {
+    margin: 20px 5px;
+    list-style:disc;
+}
+
+section ul li p {
+    margin: 0 0 0 30px;
+}
+
+/* todo FOOTER */
+footer {
+    border: solid;
+    height: 130px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: hsl(240, 9%, 13%);
+}
+footer p {
+    color: white;
+    float: right;
+    margin-top: 95px;
+    margin-right: 20px;
+}
